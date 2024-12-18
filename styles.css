@@ -1,0 +1,212 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  color: #000000;
+}
+
+a {
+  color: inherit;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  background-color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+/* Header */
+.header-navigation {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px 36px;
+}
+
+/* Mobile menu styles */
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 100%;
+  width: 100px;
+}
+
+@media screen and (min-width: 756px) {
+  .logo {
+    width: 170px;
+  }
+}
+
+/* New navigation for mobile */
+
+/* Off-screen-menu */
+.off-screen-menu {
+  background-color: #ffffff;
+  color: #f3f2f1;
+  height: 100vh;
+  width: 100%;
+  max-width: 450px;
+  position: fixed;
+  top: 0;
+  right: -450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1rem;
+  transition: 0.4s ease;
+}
+
+.off-screen-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media screen and (min-width: 756px) {
+  .off-screen-menu-list {
+    font-size: 16px;
+    font-weight: 500;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.off-screen-menu.active {
+  right: 0;
+}
+
+.order-button {
+  padding: 16px 20px;
+  border: 1px solid black;
+
+  font-weight: bold;
+}
+
+/* burger menu styles */
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.ham-menu {
+  height: 35px;
+  width: 35px;
+  margin-left: auto;
+  position: relative;
+}
+
+.ham-menu span {
+  height: 2px;
+  width: 80%;
+  background-color: #000000;
+  border-radius: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.4s ease;
+}
+
+.ham-menu span:nth-child(1) {
+  top: 25%;
+}
+
+.ham-menu span:nth-child(3) {
+  top: 75%;
+}
+
+/* Styles for the ham menu when it's active */
+
+.ham-menu.active span:nth-child(1) {
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.ham-menu.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.ham-menu.active span:nth-child(3) {
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+/* Responsive styles */
+@media (min-width: 756px) {
+  .header-navigation {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  /* Hide the hamburger menu on larger screens */
+  .ham-menu {
+    display: none;
+  }
+
+  /* Full-screen navigation */
+  .off-screen-menu {
+    position: static;
+    display: flex;
+    height: auto;
+    max-width: none;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    background-color: transparent;
+    transition: none;
+  }
+}
+
+/* Footer */
+
+footer {
+  background-color: #f9834d;
+  padding: 48px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  align-items: center;
+}
+
+footer svg {
+  width: 20px;
+  height: 20px;
+}
+
+.logo-footer {
+  height: 100%;
+  width: 84px;
+}
+
+.footer-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.footer-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  font-size: 1rem;
+}
