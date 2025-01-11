@@ -314,6 +314,7 @@ footer svg {
   background-repeat: no-repeat;
   background-position: center center;
   margin: 0 auto;
+  max-height: 80vh;
 }
 
 .hero-box {
@@ -703,8 +704,8 @@ footer svg {
 .reviews-title {
   text-align: center;
   font-size: 36px;
-  font-style: normal;
-  font-weight: 500;
+  color: black;
+  font-weight: 700;
   line-height: 100%;
   letter-spacing: -0.02em;
   max-width: 335px;
