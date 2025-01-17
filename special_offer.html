@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dignans Catering</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header -->
+
+    <header class="header-navigation" id="home">
+
+        <div class="off-screen-menu">
+            <ul class="off-screen-menu-list">
+                <li><a href="#">Home Page</a></li>
+                <li><a href="#">Our Menu</a></li>
+                <li><a href="#">Special Offers</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li class="order-button"><a href="#">Order</a></li>
+            </ul>
+        </div>
+
+        <nav>
+            <div class="logo">
+                <a href="./">
+                    <img src="./img/dignans_logo_transparent.png" alt="Dignans catering logo">
+                </a>
+            </div>
+            <div class="ham-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-special">
+        <div class="hero-box-special container">
+            <h1 class="hero-title-special">Our Special Offer</h1>
+            <p class="subtitle-special">Exclusive Deals, Limited Time Only!</p>
+            <div class="buttons-container">
+                <button type="button" class="hero-button-order">Order</button>
+                <button type="button" class="hero-button-contact">Contact</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="special-offer">
+
+        <div class="special-offer-picture">
+            <picture>
+                <source srcset="./img/dish_special_mob.png" media="(max-width: 767px)">
+                <source srcset="./img/dish_special_tab.png" media="(max-width: 1025px)">
+                <img src="./img/dish_special_full.png" alt="Special Offer">
+            </picture>
+        </div>
+        <div class="special-offer-text">
+            <p class="orange-exlusive">Exclusive</p>
+            <h3 class="special-offer-title">Quiche of the day</h3>
+            <p class="special-offer-description">Enjoy our freshly baked Quiche, made with a flaky crust and seasonal
+                fillings. Perfect for breakfast, lunch, or a snack,
+                it’s packed with flavor and pairs beautifully with a side salad or soup.</p>
+            <p class="specia-price">£4.00</p>
+            <div class="buttons-container">
+                <button type="button" class="special-button-order">Order</button>
+                <button type="button" class="special-button-contact">Contact</button>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="gallery">
+        <!-- Photo Grid -->
+        <div class="row">
+            <div class="column">
+                <img src="./img/photo_1.png" style="width:100%">
+                <img src="./img/photo_2.png" style="width:100%">
+
+            </div>
+
+            <div class="column">
+                <img src="./img/photo_3.png" style="width:100%">
+                <img src="./img/photo_4.png" style="width:100%">
+
+            </div>
+
+            <div class="column">
+                <img src="./img/photo_9.png" style="width:100%">
+                <img src="./img/photo_5.png" style="width:100%">
+            </div>
+
+            <div class="column">
+                <img src="./img/photo_8.png" style="width:100%">
+                <img src="./img/photo_7.png" style="width:100%">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-nav-top">
+            <div class="logo">
+                <a href="./">
+                    <img src="./img/dignans_logo_transparent.png" alt="Dignans catering logo">
+                </a>
+            </div>
+            <div class="footer-menu">
+                <ul class="footer-menu-list">
+                    <li><a href="#">Home Page</a></li>
+                    <li><a href="#">Our Menu</a></li>
+                    <li><a href="#">Special Offers</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="soc-icons">
+                <svg class="icon">
+                    <use xlink:href="img/sprite.svg#icon-facebook"></use>
+                </svg>
+                <svg class="icon">
+                    <use xlink:href="img/sprite.svg#icon-instagram"></use>
+                </svg>
+                <svg>
+                    <use xlink:href="img/sprite.svg#icon-youtube"></use>
+                </svg>
+            </div>
+        </div>
+        <hr class="custom-line">
+        <div class="policy-bottom">
+
+            <ul class="policy-list">
+                <li class="policy">
+                    <a href="#">Privacy Policy</a>
+                </li>
+                <li class="policy">
+                    <a href="#">Terms of Use</a>
+                </li>
+                <li class="policy">
+                    <a href="#">Cookie Policy</a>
+                </li>
+            </ul>
+            <p class="rights">© 2025 Nataliia Yareshko. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>

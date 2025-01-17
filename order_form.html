@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dignans Catering</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header -->
+
+    <header class="header-navigation" id="home">
+
+        <div class="off-screen-menu">
+            <ul class="off-screen-menu-list">
+                <li><a href="#">Home Page</a></li>
+                <li><a href="#">Our Menu</a></li>
+                <li><a href="#">Special Offers</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li class="order-button"><a href="#">Order</a></li>
+            </ul>
+        </div>
+
+        <nav>
+            <div class="logo">
+                <a href="./">
+                    <img src="./img/dignans_logo_transparent.png" alt="Dignans catering logo">
+                </a>
+            </div>
+            <div class="ham-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-order-form">
+    </section>
+
+    <section class="form-section">
+        <div class="form-container">
+            <div class="form-title-box">
+                <h1>Catering Order Form</h1>
+                <p>We're here to assist you with your catering needs.</p>
+            </div>
+            <form class="container-for-form-fields">
+                <div class="form-field-pair">
+                    <div class="form-group half-width">
+                        <label for="name">Name*</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group half-width">
+                        <label for="company">Company name</label>
+                        <input type="text" id="company" name="company">
+                    </div>
+                </div>
+                <div class="form-field-pair">
+                    <div class="form-group half-width">
+                        <label for="email">Email*</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group half-width">
+                        <label for="phone">Phone Number*</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                </div>
+                <div class="form-field-pair">
+                    <div class="form-group half-width">
+                        <label for="event-date">Event Date*</label>
+                        <input type="date" id="event-date" name="event-date" required>
+                    </div>
+                    <div class="form-group half-width">
+                        <label for="event-time">Event Time*</label>
+                        <input type="time" id="event-time" name="event-time" required>
+                    </div>
+                </div>
+                <div class="form-field-pair">
+                    <div class="form-group full-width">
+                        <label for="event-location">Event Location*</label>
+                        <input type="text" id="event-location" name="event-location" required>
+                    </div>
+                    <div class="form-group half-width">
+                        <label for="guests">Number of Guests*</label>
+                        <input type="number" id="guests" name="guests" required>
+                    </div>
+                </div>
+                <div class="form-field-pair message-box">
+                    <div class="form-group half-width">
+                        <label for="menu-type">Select Menu Type*</label>
+                        <input type="text" id="menu-type" name="menu-type" required>
+                    </div>
+                    <div class="form-group half-width">
+                        <label for="budget">Budget for 1 person</label>
+                        <input type="text" id="budget" name="budget">
+                    </div>
+                    <div class="form-group full-width message">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5"></textarea>
+                    </div>
+                </div>
+
+                <div class="checkbox-label">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms">I agree to the terms and conditions of catering services.</label>
+                </div>
+                <button type="submit" class="submit-button">Place My Order</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-nav-top">
+            <div class="logo">
+                <a href="./">
+                    <img src="./img/dignans_logo_transparent.png" alt="Dignans catering logo">
+                </a>
+            </div>
+            <div class="footer-menu">
+                <ul class="footer-menu-list">
+                    <li><a href="#">Home Page</a></li>
+                    <li><a href="#">Our Menu</a></li>
+                    <li><a href="#">Special Offers</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="soc-icons">
+                <svg class="icon">
+                    <use xlink:href="img/sprite.svg#icon-facebook"></use>
+                </svg>
+                <svg class="icon">
+                    <use xlink:href="img/sprite.svg#icon-instagram"></use>
+                </svg>
+                <svg>
+                    <use xlink:href="img/sprite.svg#icon-youtube"></use>
+                </svg>
+            </div>
+        </div>
+        <hr class="custom-line">
+        <div class="policy-bottom">
+
+            <ul class="policy-list">
+                <li class="policy">
+                    <a href="#">Privacy Policy</a>
+                </li>
+                <li class="policy">
+                    <a href="#">Terms of Use</a>
+                </li>
+                <li class="policy">
+                    <a href="#">Cookie Policy</a>
+                </li>
+            </ul>
+            <p class="rights">© 2025 Nataliia Yareshko. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
