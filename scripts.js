@@ -21,3 +21,17 @@ function showImgContent(e) {
 }
 
 document.addEventListener("mousemove", showImgContent);
+
+// Script the Print Menu button
+
+function printMenu() {
+  const menuContent = document.getElementById("menu").innerHTML;
+  const originalContent = document.body.innerHTML;
+
+  // Replace the page content with menu content for printing
+  document.body.innerHTML = menuContent;
+  window.print();
+
+  // Restore the original page content after printing
+  document.body.innerHTML = originalContent;
+}

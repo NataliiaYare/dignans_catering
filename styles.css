@@ -6,6 +6,10 @@
   color: #000000;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 a {
   color: inherit;
 }
@@ -28,6 +32,11 @@ img {
   font-family: "Dancing Script", serif;
   font-optical-sizing: auto;
   font-style: normal;
+}
+
+.anchor {
+  color: darkblue;
+  font-weight: 700;
 }
 
 /* Header */
@@ -1038,8 +1047,6 @@ li {
 p {
   font-size: 1rem;
   margin-bottom: 10px;
-  /* text-align: center; */
-  /* max-width: 300px; */
 }
 
 /* Responsive design */
@@ -1583,7 +1590,7 @@ p {
   line-height: 1.5;
   align-items: center;
   height: 48px;
-  width: 88px;
+  padding: 0 10px;
   border: none;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1656,6 +1663,10 @@ p {
   max-width: 300px;
 }
 
+.menu-item-sub {
+  padding: 0 30px;
+}
+
 .orange-exlusive-menu {
   font-family: "Dancing Script", serif;
   font-size: 24px;
@@ -1667,7 +1678,6 @@ p {
 .menu-header {
   font-size: 48px;
   font-weight: bold;
-  text-align: left;
   color: black;
   text-align: center;
 }
@@ -1709,7 +1719,7 @@ p {
   .two-table-container {
     flex-direction: row;
     max-width: 660px;
-    gap: 20px;
+    gap: 30px;
   }
 
   .black-exlusive {
@@ -1724,16 +1734,80 @@ p {
 }
 
 .plus-third-table-menu {
-  /* color: #004d2f; */
-  /* align-items: baseline; */
+  color: #004d2f;
+  align-items: baseline;
   flex-wrap: wrap;
   align-items: flex-start;
 }
 
 .green-accent {
-  color: #004d2f;
+  color: #1e9a65;
 }
 
 .menu-picture {
   width: inherit;
+}
+
+/* Bottom picture for menu page */
+
+.bottom-pic-menu {
+  background-color: #2e2f42;
+  min-height: 105px;
+  background-image: url(./img/menu_bottom_mob.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .bottom-pic-menu {
+    padding: 245px 0 290px 0;
+    min-height: 405px;
+    background-image: url(./img/menu_bottom_tab.png);
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .bottom-pic-menu {
+    padding: 270px 0 270px 0;
+    background-image: url(./img/menu_bottom_full.png);
+  }
+}
+
+.cta-menu {
+  padding: 50px 0 50px 0;
+  background-color: #0e1823;
+  display: flex;
+  justify-content: center;
+}
+
+/* Print layout */
+
+@media print {
+  /* Reset responsive/mobile styles */
+  body {
+    margin: 0;
+    font-size: 16px; /* Ensure readable font size */
+  }
+
+  /* Override layout for the menu */
+  #menu {
+    width: 800px; /* Set desktop-like width */
+    margin: 0 auto; /* Center the content */
+    padding: 20px;
+  }
+
+  /* Hide mobile-only elements */
+  .mobile-only {
+    display: none !important;
+  }
+
+  header,
+  footer,
+  .hero-menu,
+  .print-menu,
+  .cta-menu {
+    display: none;
+  }
 }

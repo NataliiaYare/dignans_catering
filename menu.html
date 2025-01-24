@@ -56,14 +56,14 @@
         <p class="download-subtitle">Easily access our complete menu and explore our delicious catering options for your
             next event.</p>
         <div class="buttons-container">
-            <button type="button" class="button-print">Print</button>
+            <button type="button" class="button-print" onclick="printMenu()">Print Menu</button>
             <button type="button" class="button-download">Download</button>
         </div>
     </section>
 
     <section class="dish-pic"></section>
 
-    <section class="menu-section">
+    <section class="menu-section" id="menu">
         <p class="black-exlusive">Savour the taste of excellence with every bite</p>
         <div class="menu-title">Our Products</div>
 
@@ -304,7 +304,7 @@
                                     </li>
                                     <li class="menu-list-with-bullets">Chinese selection</li>
                                     <li class="menu-list-with-bullets">Thai seafood bites</li>
-                                    <li class="menu-list-with-bullets">Goat’s cheese bites
+                                    <li class="menu-list-with-bullets">Goat's cheese bites
                                     </li>
                                     <li class="menu-list-with-bullets">Cream and pepper twists</li>
                                     <li class="menu-list-with-bullets">Satay sticks</li>
@@ -340,10 +340,150 @@
                 </table>
             </div>
         </div>
+
+
+        <!-- Lunch Menus -->
+        <div class="menu-box">
+            <p class="orange-exlusive-menu">Always delicious</p>
+            <h2 class="menu-header">Lunch Menus</h2>
+            <p class="menu-item-sub">Freshly prepared rolls, sandwiches, ciabattas, salads, and fruit boxes
+                delivered to your door.</p>
+            <div class="two-table-container plus-third-table-menu">
+                <table class="menu-table">
+                    <tbody>
+                        <tr class="menu-row">
+                            <td class="menu-items">Special Deal</td>
+                        </tr>
+                        <tr class="menu-row">
+                            <td>
+                                <ul class="menu-list">
+                                    <li>'Mix and Munch': Pick two or more items from any section and get a 10% discount.
+                                    </li>
+                                </ul>
+
+                            </td>
+                        </tr>
+                        <tr class="menu-row">
+                            <td class="menu-items">Hot Fayre</td>
+                        </tr>
+                        <tr class="menu-row">
+                            <td>
+                                <ul class="menu-list">
+                                    <li class="menu-list-with-bullets">Fresh homemade soup: £0.90</li>
+                                    <li class="menu-list-with-bullets">Homemade corned beef stovies: £1.30</li>
+                                </ul>
+
+                            </td>
+                        </tr>
+                        <tr class="menu-row">
+                            <td class="menu-items">Sandwiches, Rolls, and Baguettes</td>
+                        </tr>
+                        <tr class="menu-row">
+                            <td>
+                                <ul class="menu-list">
+                                    <li>Fillings priced from £1.10-£1.70:</li>
+                                    <li class="menu-list-with-bullets">Chicken Caesar</li>
+                                    <li class="menu-list-with-bullets">Ham and port salut</li>
+                                    <li class="menu-list-with-bullets">Chicken and sweetcorn</li>
+                                    <li class="menu-list-with-bullets">Brie and cranberry</li>
+                                    <li class="menu-list-with-bullets">Egg and cress</li>
+                                    <li class="menu-list-with-bullets">Tuna and sweetcorn</li>
+                                    <li class="menu-list-with-bullets">Greek salad</li>
+                                    <li class="menu-list-with-bullets">BLT</li>
+                                    <li class="menu-list-with-bullets">Roast beef with horseradish</li>
+                                    <li class="menu-list-with-bullets">Turkey and coleslaw</li>
+                                    <li class="menu-list-with-bullets">Cheese savoury</li>
+                                    <li class="menu-list-with-bullets">Club sandwich</li>
+                                    <li>Custom options available—just ask!</li>
+                                </ul>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table class="menu-table">
+                    <tbody>
+                        <tr class="menu-row">
+                            <td class="menu-items">Salad Boxes</td>
+                        </tr>
+                        <tr class="menu-row">
+                            <td>
+                                <ul class="menu-list">
+                                    <li>Prices range from £2.50-£3.50 depending on fillings:</li>
+                                    <li class="menu-list-with-bullets">Chargrilled Chicken Salad: Green leaf, red onion,
+                                        spicy coleslaw, cherry tomatoes with pesto drizzle</li>
+                                    <li class="menu-list-with-bullets">Ploughman's Lunch: Honey ham, cheddar, pickle,
+                                        celery, and cherry tomatoes</li>
+                                    <li class="menu-list-with-bullets">King Prawn and Avocado Salad: Tangy mayo dressing
+                                    </li>
+                                    <li class="menu-list-with-bullets">Greek Salad: Optional chargrilled chicken</li>
+                                    <li class="menu-list-with-bullets">Baby Beetroot Salad: Buffalo mozzarella, grated
+                                        carrot, sliced shallots, low-fat mint yogurt dressing</li>
+                                </ul>
+
+                            </td>
+                        </tr>
+                        <tr class="menu-row">
+                            <td class="menu-items">Vegetarian Options</td>
+                        </tr>
+                        <tr class="menu-row">
+                            <td>
+                                <ul class="menu-list">
+                                    <li>Homemade Vegetarian Quiche: Served with mixed salad</li>
+                                </ul>
+                            </td>
+
+                        <tr class="menu-row">
+                            <td class="menu-items">Fruit & Desserts</td>
+                        </tr>
+                        <tr class="menu-row">
+                            <td>
+                                <ul class="menu-list">
+                                    <li class="menu-list-with-bullets">Fruit Salad Boxes: £1.80Fresh pineapple, melon,
+                                        strawberries, kiwi, oranges, and grapes</li>
+                                    <li class="menu-list-with-bullets">Tray Bakes and More: £0.60
+                                        (Ask for available varieties)</li>
+                                </ul>
+
+                            </td>
+                        </tr>
+
+                        <tr class="menu-row">
+                            <td class="menu-items">Cold Drinks</td>
+                        </tr>
+                        <tr class="menu-row">
+                            <td>
+                                <ul class="menu-list">
+                                    <li class="menu-list-with-bullets">Coke, Diet Coke, Irn Bru, Fanta: £0.60</li>
+                                    <li class="menu-list-with-bullets">Still and sparkling water (500ml): £0.70</li>
+                                    <li class="menu-list-with-bullets">Flavored water: £1.30</li>
+                                    <li class="menu-list-with-bullets">Fruit smoothie: £1.30</li>
+                                    <li class="menu-list-with-bullets">Bottle fresh orange: £0.80</li>
+                                </ul>
+
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+
+
+
     </section>
 
+    <section class="bottom-pic-menu">
+    </section>
 
-
+    <section class="cta-menu">
+        <div class="buttons-container">
+            <button type="button" class="button-print" onclick="printMenu()">Print Menu</button>
+            <button type="button" class="button-download">Download</button>
+        </div>
+    </section>
 
 
     <footer>
@@ -362,16 +502,23 @@
                 </ul>
             </div>
             <div class="soc-icons">
-                <svg class="icon">
-                    <use xlink:href="img/sprite.svg#icon-facebook"></use>
-                </svg>
-                <svg class="icon">
-                    <use xlink:href="img/sprite.svg#icon-instagram"></use>
-                </svg>
-                <svg>
-                    <use xlink:href="img/sprite.svg#icon-youtube"></use>
-                </svg>
+                <a href="https://www.facebook.com/dignanband/">
+                    <svg class="icon">
+                        <use xlink:href="img/sprite.svg#icon-facebook"></use>
+                    </svg>
+                </a>
+
+                <a href="https://www.instagram.com/reallydeliciousglasgow/?hl=en">
+                    <svg class="icon">
+                        <use xlink:href="img/sprite.svg#icon-instagram"></use>
+                    </svg>
+                </a>
+
+                <a href="https://www.youtube.com/hashtag/catering"><svg>
+                        <use xlink:href="img/sprite.svg#icon-youtube"></use>
+                    </svg></a>
             </div>
+        </div>
         </div>
         <hr class="custom-line">
         <div class="policy-bottom">
