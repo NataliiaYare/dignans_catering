@@ -950,7 +950,7 @@ footer svg {
   }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1025px) {
   .container {
     padding-left: 220px;
     padding-right: 50px;
@@ -1555,6 +1555,13 @@ p {
   text-align: left;
 }
 
+@media screen and (min-width: 1025px) {
+  .print-menu {
+    padding-left: 220px;
+    padding-right: 50px;
+  }
+}
+
 .download-title {
   font-size: 48px;
   font-weight: 700;
@@ -1598,8 +1605,9 @@ p {
   line-height: 1.5;
   align-items: center;
   height: 48px;
-  width: 88px;
+  /* width: 88px; */
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 0 10px;
 }
 
 .button-download:hover,
@@ -1635,7 +1643,7 @@ p {
   font-size: 64px;
   font-weight: bold;
   margin-top: 20px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 .menu-box {
   text-align: center;
@@ -1645,8 +1653,17 @@ p {
   width: 100%;
   border-collapse: collapse;
   margin-bottom: 20px;
-  max-width: 300;
+  max-width: 300px;
 }
+
+.orange-exlusive-menu {
+  font-family: "Dancing Script", serif;
+  font-size: 24px;
+  font-weight: 100;
+  color: #ff6347;
+  margin-bottom: 20px;
+}
+
 .menu-header {
   font-size: 48px;
   font-weight: bold;
@@ -1686,4 +1703,37 @@ p {
   flex-direction: column;
   margin: auto;
   max-width: 300px;
+}
+
+@media screen and (min-width: 768px) {
+  .two-table-container {
+    flex-direction: row;
+    max-width: 660px;
+    gap: 20px;
+  }
+
+  .black-exlusive {
+    font-size: 40px;
+  }
+
+  .orange-exlusive-menu {
+    font-family: "Dancing Script", serif;
+    font-size: 60px;
+    margin-bottom: 20px;
+  }
+}
+
+.plus-third-table-menu {
+  /* color: #004d2f; */
+  /* align-items: baseline; */
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.green-accent {
+  color: #004d2f;
+}
+
+.menu-picture {
+  width: inherit;
 }
