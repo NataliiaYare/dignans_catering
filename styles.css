@@ -574,7 +574,6 @@ footer svg {
 .discover {
   margin-bottom: 20px;
   font-size: 32px;
-  /* max-width: 360px; */
 }
 
 .about-us-text {
@@ -599,7 +598,6 @@ footer svg {
   .about-us {
     flex-direction: row;
     gap: 80px;
-    /* padding: 112px 220px; */
     justify-content: center;
   }
 
@@ -696,7 +694,6 @@ footer svg {
   line-height: 1.5;
   align-items: center;
   height: 48px;
-  /* width: 88px; */
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -886,10 +883,10 @@ footer svg {
   border: black 2px solid;
 }
 
-.second-item,
+/* .second-item,
 .third-item {
   display: none;
-}
+} */
 
 .customer-photo {
   width: 56px;
