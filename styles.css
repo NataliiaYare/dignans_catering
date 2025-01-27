@@ -8,6 +8,8 @@
 
 html {
   scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased; /* Smoother fonts */
+  font-size: 1rem;
 }
 
 a {
@@ -51,7 +53,7 @@ img {
 .hamburger {
   display: none;
   cursor: pointer;
-  font-size: 24px;
+  font-size: 2rem;
 }
 
 .nav-container {
@@ -98,7 +100,7 @@ img {
 
 @media screen and (min-width: 768px) {
   .off-screen-menu-list {
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 500;
     flex-direction: row;
     align-items: center;
@@ -325,7 +327,7 @@ footer svg {
 
 .hero {
   background-color: #2e2f42;
-  padding: 210px 0 270px 0;
+  padding: 180px 0 180px 0;
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url(./img/hero_mob.png);
   background-size: cover;
@@ -353,11 +355,13 @@ footer svg {
     padding: 270px 0 270px 0;
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
       url(./img/hero_full.png);
+    display: flex;
+    justify-content: center;
   }
 }
 
 .hero-title {
-  font-size: 40px;
+  font-size: 2.5rem;
   font-style: normal;
   letter-spacing: 0.02em;
   color: #ffffff;
@@ -369,16 +373,16 @@ footer svg {
   color: #ffffff;
   max-width: 336px;
   margin-bottom: 24px;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 100;
   text-align: inherit;
 }
 
 @media screen and (min-width: 768px) {
   .hero-title {
-    font-size: 56px;
+    font-size: 3.5rem;
     margin-bottom: 48px;
-    max-width: 700px;
+    max-width: 1200px;
   }
 
   .hero-box {
@@ -393,7 +397,10 @@ footer svg {
 
 @media screen and (min-width: 1025px) {
   .hero-box {
-    padding-left: 220px;
+    padding: 0;
+  }
+  .subtitle {
+    max-width: 1200px;
   }
 }
 
@@ -404,7 +411,7 @@ footer svg {
 
 .hero-button-order {
   background: #ffffff;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 500;
   letter-spacing: 0.04em;
   line-height: 1.5;
@@ -425,7 +432,7 @@ footer svg {
 .hero-button-contact {
   background: transparent;
   color: #ffffff;
-  font-size: 16px;
+  font-size: 1rem;
   border: #ffffff 1px solid;
   font-weight: 500;
   letter-spacing: 0.04em;
@@ -472,13 +479,15 @@ footer svg {
 @media screen and (min-width: 1025px) {
   .hero-special {
     padding: 270px 0 270px 0;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)),
       url(./img/special_hero_full.png);
+    display: flex;
+    justify-content: center;
   }
 }
 
 .hero-title-special {
-  font-size: 40px;
+  font-size: 2.5rem;
   font-style: normal;
   letter-spacing: 0.02em;
   color: #ffffff;
@@ -490,13 +499,13 @@ footer svg {
   color: #ffffff;
   max-width: 336px;
   margin-bottom: 24px;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 100;
 }
 
 @media screen and (min-width: 768px) {
   .hero-title-special {
-    font-size: 56px;
+    font-size: 3.5rem;
     margin-bottom: 48px;
     max-width: 700px;
   }
@@ -525,7 +534,7 @@ footer svg {
 
 .hero-button-order {
   background: #ffffff;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 500;
   letter-spacing: 0.04em;
   line-height: 1.5;
@@ -546,7 +555,7 @@ footer svg {
 .hero-button-contact {
   background: transparent;
   color: #ffffff;
-  font-size: 16px;
+  font-size: 1rem;
   border: #ffffff 1px solid;
   font-weight: 500;
   letter-spacing: 0.04em;
@@ -573,11 +582,11 @@ footer svg {
 
 .discover {
   margin-bottom: 20px;
-  font-size: 32px;
+  font-size: 2rem;
 }
 
 .about-us-text {
-  font-size: 16px;
+  font-size: 1rem;
   text-align: left;
 }
 
@@ -587,10 +596,10 @@ footer svg {
   }
   .discover {
     margin-bottom: 38px;
-    font-size: 40px;
+    font-size: 2.5rem;
   }
   .about-us-text {
-    font-size: 18px;
+    font-size: 1.2rem;
   }
 }
 
@@ -603,12 +612,12 @@ footer svg {
 
   .discover {
     margin-bottom: 20px;
-    font-size: 32px;
+    font-size: 2rem;
     max-width: 600px;
   }
 
   .about-us-text {
-    font-size: 18px;
+    font-size: 1.2rem;
     max-width: 500px;
   }
 }
@@ -624,18 +633,18 @@ footer svg {
 }
 
 .exquisite {
-  font-size: 16px;
+  font-size: 1rem;
   margin-bottom: 12px;
   font-weight: 700;
 }
 
 .options-title {
-  font-size: 36px;
+  font-size: 2.2rem;
   margin-bottom: 20px;
 }
 
 .options-description {
-  font-size: 16px;
+  font-size: 1rem;
   margin-bottom: 48px;
   text-align: left;
 }
@@ -651,7 +660,7 @@ footer svg {
 }
 
 .options-subtitle {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 700;
   margin-bottom: 20px;
   margin-top: 20px;
@@ -666,7 +675,7 @@ footer svg {
 .button-explore {
   background: transparent;
   color: black;
-  font-size: 16px;
+  font-size: 1rem;
   border: black 1px solid;
   font-weight: 500;
   letter-spacing: 0.04em;
@@ -687,7 +696,7 @@ footer svg {
 .button-contact-orange {
   background: transparent;
   color: black;
-  font-size: 16px;
+  font-size: 1rem;
   border-style: none;
   font-weight: 500;
   letter-spacing: 0.04em;
@@ -702,17 +711,17 @@ footer svg {
     padding: 82px 105px;
   }
   .exquisite {
-    font-size: 18px;
+    font-size: 1.2rem;
     margin-bottom: 25px;
   }
 
   .options-title {
-    font-size: 48px;
+    font-size: 3rem;
     margin-bottom: 24px;
   }
 
   .options-description {
-    font-size: 18px;
+    font-size: 1.2rem;
     margin-bottom: 84px;
   }
 
@@ -722,7 +731,7 @@ footer svg {
   }
 
   .options-subtitle {
-    font-size: 32px;
+    font-size: 2rem;
     margin-bottom: 24px;
   }
 }
@@ -733,7 +742,7 @@ footer svg {
   }
 
   .exquisite {
-    font-size: 18px;
+    font-size: 1.2rem;
     margin-bottom: 25px;
   }
 
@@ -744,7 +753,7 @@ footer svg {
   }
 
   .options-title {
-    font-size: 48px;
+    font-size: 3rem;
     margin-bottom: 24px;
     text-align: center;
     max-width: 768px;
@@ -783,13 +792,13 @@ footer svg {
 
 .special-title {
   color: #ffffff;
-  font-size: 32px;
+  font-size: 2rem;
   margin-bottom: 20px;
 }
 
 .special-description {
   color: #ffffff;
-  font-size: 18px;
+  font-size: 1.2rem;
   margin-bottom: 48px;
   text-align: left;
 }
@@ -805,7 +814,7 @@ footer svg {
   }
 
   .special-title {
-    font-size: 40px;
+    font-size: 2.5rem;
   }
 
   .special-text {
@@ -845,7 +854,7 @@ footer svg {
 
 .reviews-title {
   text-align: center;
-  font-size: 36px;
+  font-size: 2.2rem;
   color: black;
   font-weight: 700;
   line-height: 100%;
@@ -857,7 +866,7 @@ footer svg {
 .reviews-paragraph {
   color: inherit;
   text-align: center;
-  font-size: 12px;
+  font-size: 0.8rem;
   font-weight: 400;
   line-height: 120%;
   letter-spacing: -0.02em;
@@ -900,7 +909,7 @@ footer svg {
   color: black;
   text-align: center;
   font-family: Inter;
-  font-size: 18px;
+  font-size: 1.2rem;
   font-style: normal;
   font-weight: 500;
   line-height: 110%;
@@ -911,7 +920,7 @@ footer svg {
 .reviews-cust-text {
   text-align: center;
   font-family: Inter;
-  font-size: 16px;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 400;
   line-height: 140%;
@@ -940,12 +949,12 @@ footer svg {
   }
 
   .reviews-title {
-    font-size: 48px;
+    font-size: 3rem;
     max-width: 704px;
   }
 
   .reviews-paragraph {
-    font-size: 14px;
+    font-size: 1rem;
     line-height: 130%;
     max-width: 571px;
     margin-bottom: 75px;
@@ -957,11 +966,6 @@ footer svg {
 }
 
 @media screen and (min-width: 1025px) {
-  .container {
-    padding-left: 220px;
-    padding-right: 50px;
-  }
-
   .third-item {
     display: flex;
   }
@@ -977,6 +981,10 @@ footer svg {
 
   .reviews-title {
     max-width: 854px;
+  }
+
+  .container {
+    padding: 0;
   }
 }
 
@@ -1065,12 +1073,12 @@ p {
 }
 
 .special-offer-title {
-  font-size: 32px;
+  font-size: 2rem;
   margin-bottom: 20px;
 }
 
 .special-offer-description {
-  font-size: 18px;
+  font-size: 1.2rem;
   margin-bottom: 48px;
   text-align: left;
 }
@@ -1085,12 +1093,7 @@ p {
   }
 
   .special-offer-title {
-    font-size: 40px;
-  }
-
-  .special-offer-text {
-    /* max-width: 494px; */
-    /* text-align: left; */
+    font-size: 2.5rem;
   }
 }
 
@@ -1115,7 +1118,7 @@ p {
 .special-button-order {
   background: #f9834d;
   color: #ffffff;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 500;
   letter-spacing: 0.04em;
   line-height: 1.5;
@@ -1136,7 +1139,7 @@ p {
 .special-button-contact {
   background: transparent;
   color: #f9834d;
-  font-size: 16px;
+  font-size: 1rem;
   border: #f9834d 1px solid;
   font-weight: 500;
   letter-spacing: 0.04em;
@@ -1156,13 +1159,13 @@ p {
 .orange-exlusive {
   color: #f9834d;
   font-family: "Dancing Script", serif;
-  font-size: 64px;
+  font-size: 4rem;
   font-weight: 400;
 }
 
 .specia-price {
   color: #f9834d;
-  font-size: 38px;
+  font-size: 2.3rem;
   font-weight: 400;
   margin-bottom: 20px;
 }
@@ -1208,18 +1211,30 @@ p {
 }
 
 .confirmation {
-  padding: 20px 20px;
+  padding: 80px;
   display: flex;
   justify-content: center;
+  background-color: #2e2f42;
+  padding: 180px 0 180px 0;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(./img/hero_mob.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin: 0 auto;
 }
 
 .conf-container {
   border: 2px solid #ff8000;
+  background-color: white;
   border-radius: 60px;
+  /* background-color: rgb(229, 255, 229); */
   display: flex;
   flex-direction: column;
+  gap: 15px;
   justify-content: center;
-  max-width: 600px;
+  /* min-width: 200px; */
+  /* max-width: 600px; */
   padding: 40px 20px;
   text-align: -webkit-center;
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
@@ -1228,7 +1243,8 @@ p {
 }
 
 .icon-conf {
-  margin: 20px;
+  /* margin: 20px 0 30px 0; */
+  margin: 0 auto;
 }
 
 .conf-title {
@@ -1237,6 +1253,7 @@ p {
 
 .conf-text {
   max-width: 360px;
+  /* margin-top: 10px; */
 }
 
 .contacts {
@@ -1245,7 +1262,8 @@ p {
 
 @media (min-width: 768px) {
   .confirmation {
-    padding: 40px 20px;
+    padding: 200px;
+    min-height: 70vh;
   }
 }
 
@@ -1327,7 +1345,7 @@ p {
   color: white;
   border: none;
   border-radius: 4px;
-  font-size: 16px;
+  font-size: 1rem;
   cursor: pointer;
   margin: 0 auto;
   max-width: 200px;
@@ -1443,7 +1461,7 @@ p {
 }
 
 .contact-title {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 10px;
   text-align: left;
@@ -1466,7 +1484,7 @@ p {
 }
 
 .contact-heading {
-  font-size: 18px;
+  font-size: 1.2rem;
   font-weight: bold;
   margin: 0 0 5px 0;
   color: #ffffff;
@@ -1474,14 +1492,14 @@ p {
 
 .contact-text {
   margin: 0 0 5px 0;
-  font-size: 14px;
+  font-size: 1rem;
   color: #ffffff;
 }
 
 .contact-link {
   text-decoration: none;
   color: #ffffff;
-  font-size: 14px;
+  font-size: 1rem;
 }
 
 .contact-link:hover {
@@ -1499,11 +1517,12 @@ p {
     display: flex;
     padding: 112px 64px;
     align-items: center;
+    justify-content: center;
   }
 
   .map-container {
     width: 830px;
-    margin: 0 auto;
+    /* margin: 0 auto; */
   }
 }
 
@@ -1547,6 +1566,8 @@ p {
     padding: 270px 0 270px 0;
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
       url(./img/menu_hero_full.png);
+    display: flex;
+    justify-content: center;
   }
 }
 
@@ -1556,32 +1577,37 @@ p {
   background-color: #004d2f;
   color: #ffffff;
   padding: 64px 40px;
-  text-align: left;
 }
 
 @media screen and (min-width: 1025px) {
   .print-menu {
-    padding-left: 220px;
-    padding-right: 50px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .main-title-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
   }
 }
 
 .download-title {
-  font-size: 48px;
+  font-size: 3rem;
   font-weight: 700;
   margin-bottom: 20px;
   text-align: left;
 }
 
 .download-subtitle {
-  font-size: 18px;
+  font-size: 1.2rem;
   margin-bottom: 48px;
   color: #ffffff;
 }
 
 .button-print {
   background: #ffffff;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 500;
   letter-spacing: 0.04em;
   line-height: 1.5;
@@ -1602,7 +1628,7 @@ p {
 .button-download {
   background: transparent;
   color: #ffffff;
-  font-size: 16px;
+  font-size: 1rem;
   border: #ffffff 1px solid;
   font-weight: 500;
   letter-spacing: 0.04em;
@@ -1639,15 +1665,17 @@ p {
 
 .black-exlusive {
   font-family: "Dancing Script", serif;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 100;
+  text-align: center;
 }
 
 .menu-title {
-  font-size: 64px;
+  font-size: 4rem;
   font-weight: bold;
   margin-top: 20px;
   margin-bottom: 20px;
+  text-align: center;
 }
 .menu-box {
   text-align: center;
@@ -1666,14 +1694,14 @@ p {
 
 .orange-exlusive-menu {
   font-family: "Dancing Script", serif;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 100;
   color: #ff6347;
   margin-bottom: 20px;
 }
 
 .menu-header {
-  font-size: 48px;
+  font-size: 3rem;
   font-weight: bold;
   color: black;
   text-align: center;
@@ -1700,7 +1728,7 @@ p {
 
 .menu-items {
   text-align: center;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 700;
   /* margin-bottom: 15px; */
 }
@@ -1720,12 +1748,12 @@ p {
   }
 
   .black-exlusive {
-    font-size: 40px;
+    font-size: 2.5rem;
   }
 
   .orange-exlusive-menu {
     font-family: "Dancing Script", serif;
-    font-size: 60px;
+    font-size: 3.75rem;
     margin-bottom: 20px;
   }
 }
@@ -1785,7 +1813,7 @@ p {
   /* Reset responsive/mobile styles */
   body {
     margin: 0;
-    font-size: 16px; /* Ensure readable font size */
+    font-size: 1rem; /* Ensure readable font size */
   }
 
   /* Override layout for the menu */
