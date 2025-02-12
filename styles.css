@@ -72,6 +72,9 @@ img {
   }
 }
 
+.hidden {
+  display: none;
+}
 /* Off-screen-menu */
 
 .off-screen-menu {
